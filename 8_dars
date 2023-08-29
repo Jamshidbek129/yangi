@@ -1,0 +1,43 @@
+#summa = input("Summani kiriting: ")
+#if summa.isdigit() and int(summa)>0 and int(summa)<100000:
+#	print("Tashakkur")
+#else:
+#	print("Xatolik bor!")
+son=input("1 dan 30 gacha bo'lgan son kiriting:) ")
+if son.isdigit():
+	son=int(son)
+	if son>0 and son<30:
+		qoldiq=son%10
+		yozuv=""
+		if son>9 and son<20:
+			yozuv="O'n "
+		elif son>19 and son<30:
+			yozuv="Yigirma "
+		if qoldiq==1:
+			yozuv+="bir"
+		elif qoldiq==2:
+			yozuv+="ikki"
+		elif qoldiq==3:
+			yozuv+="uch"
+		elif qoldiq==4:
+			yozuv+="to'rt"
+		elif qoldiq==5:
+			yozuv+="besh"
+		elif qoldiq==6:
+			yozuv+="olti"
+		elif qoldiq==7:
+			yozuv+="yetti"
+		elif qoldiq==8:
+			yozuv+="sakkiz"
+		elif qoldiq==9:
+			yozuv+="to'qqiz"
+
+
+
+
+		print(yozuv)
+	else:
+		print("KIritilgan son 1 va 30 orasida emas!")
+else:
+	print("Iltimos son kiriting!")
+

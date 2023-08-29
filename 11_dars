@@ -1,0 +1,58 @@
+#satr=input("so'z kiriting:")
+#for s in satr:
+#	if s.isdigit():
+#		print("sinishdan oldin:",s)
+#		continue
+#		
+#		#break
+#	print(s)
+from turtle import Turtle, Screen
+oyna=Screen()
+oyna.title("Mening oynam")
+chiziq=Turtle()
+ramka=Turtle()
+ramka.color("black")
+ramka.pensize(5)
+ramka.hideturtle()
+ramka.speed(0)
+ramka.up()
+ramka.goto(-250,-300)
+ramka.down()
+ramka.goto(-250,-250)
+ramka.goto(-150,-250)
+ramka.goto(-150,-300)
+ramka.goto(-250,-300)
+
+
+chiziq.color("red")
+chiziq.pensize(5)
+chiziq.hideturtle()
+chiziq.speed(0)
+chiziq.up()
+chiziq.goto(300,300)
+chiziq.down()
+chiziq.goto(300,-300)
+chiziq.goto(-300,-300)
+chiziq.goto(-300,300)
+chiziq.goto(300,300)
+koptok=Turtle()
+koptok.shape('circle')
+koptok.color('blue')
+koptok.up()
+koptok.goto(-149,-300)
+koptok.down()
+step_x=2
+step_y=10
+while True:
+	x,y=koptok.position()
+	if (x+step_x)>=300 or (x+step_x)<=-300:
+		step_x=-step_x
+	if y+step_y>+300 or y+step_y<=-300:
+		step_y=-step_y
+	koptok.goto(x+step_x,y+step_y)
+	if x>=-250 and x<=-150 and y>=-300 and y<=-250:
+		break
+	
+
+
+oyna.mainloop()

@@ -1,0 +1,25 @@
+yozuv=input("Sonlarni lotin alifbosida kiritimg: ")
+son=0
+if yozuv=="o'n":
+	son=10
+elif yozuv=="bir":
+	son+=1
+elif yozuv=="ikki":
+	son+=2
+elif yozuv=="uch":
+	son+=3
+elif yozuv=="to'rt":
+	son+=4
+elif yozuv=="besh":
+	son+=5
+elif yozuv=="besh":
+	son+=5
+elif yozuv=="olti":
+	son+=6
+elif yozuv=="yetti":
+	son+=7
+elif yozuv=="sakkiz":
+	son+=8
+elif yozuv=="to'qqiz":
+	son+=9
+print(son)

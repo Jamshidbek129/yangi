@@ -1,0 +1,16 @@
+#son=45
+#print("son=",son,type(son))
+#sonlar=[45,67,78,-91]
+#print("sonlar=",sonlar,type(sonlar))
+#print(len(sonlar))
+#sonlar.append("Jamshid")
+#print(sonlar)
+
+import pygal
+a=pygal.Line()
+a.title="Statistika"
+a.x_labels=["Aprel","Sentabr","Dekabr"]
+a.add("Facebook",[13,14.8,28])
+a.add("Instagram",[45,46.8,50])
+a.add("you tobe",[57,59,63.2])
+a.render_in_browser()

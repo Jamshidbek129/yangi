@@ -1,0 +1,22 @@
+til=input("Tilni tanlang uz\en: ")
+if til=="uz":
+	print("Assalomu aleykum")
+elif til=="en":
+	print("Hello")
+else:
+	print("topilmadi \ no language")
+from random import randint
+a=randint(1,1000)
+b=randint(1,1000)
+c=int(input("{}+{}=".format(a,b)))
+print(c)
+if c==a+b:
+	print("True")
+else:
+	print("False!")
+print("Topshiriq: Kabisa yilini aniqlash(Ya'ni 4ga bo'linadigan yillar Kabisa lekin 100ga bo'linadiganlar Kabisa emas):")
+a=int(input("Yil kiriting: "))
+if a%4==0 and a%100!=0:
+	print("Kabisa yili")
+else:
+	print("Kabisa yili emas")

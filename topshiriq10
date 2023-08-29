@@ -1,0 +1,12 @@
+
+a=input("Butun son kiriting:")
+while a:
+	if a.isdigit():
+		print("Raxmat")
+	else:
+
+		print("Xatolik!!!")
+		a=input("Butun son kiriting:")
+
+
+	

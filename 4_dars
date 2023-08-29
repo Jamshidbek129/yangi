@@ -1,0 +1,28 @@
+print("+ amali", 65+5)
+print("- amali", 65-5)
+print("* amali", 65*5)
+print("/ amali", 65/5)
+
+print('% belgisi', 46%4)
+print('// belgisi', 46//4)
+print('** belgisi', 46**4)
+print('% belgisi', 46%4)
+print("1 kg limon a so'm b tiyin")
+a=int(input("so'm: "))
+b=int(input("tiyin: "))
+c=a*100+b
+print("1kg limon tiyini: ", c)
+d=int(input("Nechchi kg limon olasiz? "))
+e=d*c
+print("umumiy tiyin: ",e)
+j=int(e)//100
+r=int(e)%100
+print(j,"so'm " , r,"tiyin")
+
+
+
+
+
+print("Uyga vazifa")
+a=int(input("a= "))
+print("Oxirgi raqam: ", a%10)

@@ -1,0 +1,15 @@
+a=input("Kiriting: ")
+#print("Salom {}".format(a))
+#print("{:.5}".format(a))
+#print(a.capitalize())
+#print(a.casefold())
+#print(a.count("s"))
+#print(len(a))
+#print(a[1:4])
+#print(a[::-1].capitalize())
+
+
+
+#Uyga vazifa
+b=a.split()
+print(b[1],b[0])

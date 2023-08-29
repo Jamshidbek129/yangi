@@ -1,0 +1,19 @@
+import math
+print(math.ceil(4.2))
+print(math.floor(5.6))
+print(math.sqrt(22))
+soat1=int(input("1-soat"))
+minut1=int(input("1-minut"))
+secund1=int(input("1-secund"))
+soat2=int(input("2-soat"))
+minut2=int(input("2-minut"))
+secund2=int(input("2-secund"))
+c=int(soat1*3600+minut1*60+secund1)
+d=int(soat2*3600+minut2*60+secund2)
+e=int((d-c)//3600)
+e1=(d-c-e*3600)//60
+e2=(d-c)%60
+print("soat{} ".format(e), e1, "minut ", e2, "secund")
+print ("Topshiriq: 3 xonali butun son kiritiladi uning raqamlar yig'indisini topish kerak:")
+a=int(input("Kiriting: "))
+print(a//100+(a//10)%10+a%10)

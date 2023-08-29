@@ -1,0 +1,7 @@
+import pygal
+a=pygal.Line()
+a.title="Statistika"
+b=input("sayt nomi: ")
+a.x_label=["yanvar","fevral","mart"]
+a.add(b,[12.3,13,13.4])
+a.render_in_browser()

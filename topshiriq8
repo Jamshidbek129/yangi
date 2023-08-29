@@ -1,0 +1,11 @@
+harf=input("Ingiziz tili alifbosidan harf kiriting:) ")
+if harf.isdigit():
+	print("Iltimos harf kiriting:")
+elif len(harf)==1:
+	if harf=='a' or harf=='e' or harf=='i' or harf=='o' or harf=='u' or harf=='A' or harf=='E' or harf=='I' or harf=='O' or harf=='U':
+		print("Bu harf unli")
+	else:
+		print("Bu harf undosh")
+	
+else:
+	print("iltimos harf kiriting!")

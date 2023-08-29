@@ -1,0 +1,23 @@
+import pygal
+a=pygal.Line()
+a.title="Statistika"
+b=input("1-sayt nomi: ")
+d=[]
+for i in range(3):
+	d.append(int(input(f"{i+1}-sonni kiriting")))
+
+b1=input("2-sayt nomi: ")
+d1=[]
+for i in range(3):
+	d1.append(int(input(f"{i+1}-sonni kiriting")))
+
+b2=input("3-sayt nomi: ")
+d2=[]
+for i in range(3):
+	d2.append(int(input(f"{i+1}-sonni kiriting")))
+
+a.x_label=["yanvar","fevral","mart"]
+a.add(b,d)
+a.add(b1,d1)
+a.add(b2,d2)
+a.render_in_browser()

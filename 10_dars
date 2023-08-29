@@ -1,0 +1,6 @@
+from random import randint
+eski_kodlar=[6,10]
+yangi_kod=randint(6,10)
+while yangi_kod in eski_kodlar:
+	yangi_kod=randint(6,10)
+print(yangi_kod)
