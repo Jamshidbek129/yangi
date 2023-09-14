@@ -50,7 +50,7 @@ print(telefonlar.values(),"\n")
 print("Foydalanuvchilar quyidagi telfonlardam foydalanadilar:\n")
 for tel in telefonlar.values():
     print(tel)
-    # SET metodining ishlashi
+    # SET funksiyasining ishlashi
 print("\n")
 telefonlar={
     "Jamshid":"VIVO",
@@ -67,9 +67,47 @@ for tel in set(telefonlar.values()):
 toys={"ayiqcha","kuchukcha","mushukcha","ayiqcha"}
 print(type(toys))
 print(toys)
-        
-        
-        
+
+
+#####   AMALIYOT   >>>>>>>>>>
+python_lugat={
+    "print":"ko'rsatish","float":"butun sonlar","sort":"saralash metodi",
+    "lower":"hamma harfni kichraytiradi","title":"bosh harflar katta bo'ladi"
+    }
+for k,q in python_lugat.items():
+    print(k," - ",q)
+dav_poyt={
+     "O'zbekiston":"Toshkent","AQSh":"Washington","Rossiya":"Moskva",
+     "Qozog'iston":"Ostona","Qirg'iziston":"Bishkek"
+     }
+print("Davlatlar:")
+for k in sorted(dav_poyt):
+    print(k)
+print("Davlat poytaxtlari:")
+for k in sorted(dav_poyt.values()):
+    print(k)
+a=input("Davlat nomini kiriting: ")
+if a.capitalize() in dav_poyt.keys():
+    print(f"{a.capitalize()}ning poytaxti {dav_poyt[a.capitalize()]}")
+elif a=="AQSh":
+    print(f"{a}ning poytaxti {dav_poyt[a]}")
+else:
+    print("Bizda bunday ma'lumot yo'q!")
+restoran={"palov":30000,"manti":7000,"somsa":4000,"shashlik":12000,
+          "lavash":28000,"qlab":35000
+          }
+buyurtma=[]
+
+
+b=int(input("Nechta taom buyurtma berasiz?\n >>>>"))
+for i in range(b):
+    c=input(f"{i+1}-taomni kiriting: ")
+    buyurtma.append(c)
+for j in buyurtma:
+    if j.lower() in restoran.keys():
+        print(f"{j.capitalize()} {restoran[j.lower()]}")
+    else:
+        print(f"Kechirasiz, bizda {j.capitalize()} yo'q")
         
         
         
