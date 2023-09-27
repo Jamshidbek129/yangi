@@ -80,6 +80,12 @@ while True:
     if c1!='ha':
         break
 print(a1)
+    
+for a2,i2 in a1.items():
+    if a2 in mahsulotlar:
+        print(f"{a2}ning narxi {i2}")
+    else:
+        print(f"Bizda {a2} nomli mahsulot yo'q")
 
 
 
