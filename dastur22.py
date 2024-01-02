@@ -48,7 +48,7 @@ print(a_plus_b)
 
 ## SAMPLE HAMDA FILTERNI ISHLASHI
 import random as ran
-sonlar1=ran.sample(range(100), 10)
+sonlar1=ran.sample(range (100), 10)
 print(sonlar1)
 def juft(x):
     return x%2==0

@@ -35,3 +35,12 @@ def info_print(avto_info):
     print(f"{avto_info['rang'].title()} {avto_info['kompaniya']}."
           f"Narxi: {avto_info['narx']}")
     return avto_info
+
+
+def DATA(a,b):
+    print("Salom Jamshidbek.Xush kelibsiz! ")
+    print("Kiritgan soningizni darajaga oshirib beraman")
+    a=int(input("Son kiriting: "))
+    b=int(input("Daraja kiriting: "))
+    return print(a**b) 
+
