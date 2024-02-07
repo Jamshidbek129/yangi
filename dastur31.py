@@ -50,7 +50,7 @@ with open("L.txt") as X:
     x=X.read()
 x=x.replace(" ","")
 x=x.replace("\n", "")
-x=float(x)
+#x=float(x)
 print(x)
 
 with open("X","wb") as B:

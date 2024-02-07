@@ -145,7 +145,35 @@ class Fan:
             return [x for x in self.studentlar]
     
 
+
+###   dastur35 uchun Classlar
+
+class Car:
+    def __init__(self,kompanya,model,rang,km=0,narh=None):
+        self.kompanya=kompanya
+        self.model=model
+        self.rang=rang
+        self.narh=narh
+        self.__km=km
+    def get_make(self):
+        return self.kompanya
+    def add_km(self,km):
+        if km>=0:
+            self.__km+=km
         
+            
+        else:
+            raise ValueError("km manfiy bo'lmaydi")
+    def new_narh(self,a):
+        self.narh=a
+                
+    def get_km(self):
+        return self.__km
+    def get_info(self):
+        if self.narh==None:
+            return f"{self.kompanya}: {self.rang.title()} {self.model}. {self.__km} km yurgan"
+        else:
+            return f"{self.kompanya}: {self.rang.title()} {self.model}. {self.__km} km yurgan. Narxi:{self.narh}"
     
     
     

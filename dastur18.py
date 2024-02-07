@@ -157,6 +157,8 @@ t_sonlar(m, l)
 
 def fibona(n):
     a=[]
+    a1=int(input("Massivning 1-elementini kiriting: "))
+    a2=int(input("Massivning 2-elementini kiriting: "))
     a.append(a1)
     a.append(a2)
     for i in range(n-2):
@@ -167,8 +169,7 @@ def fibona(n):
 n=int(input("n="))
 #i=0
 
-a1=int(input("Massivning 1-elementini kiriting: "))
-a2=int(input("Massivning 2-elementini kiriting: "))
+
 
 fibona(n)
 

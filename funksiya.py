@@ -44,3 +44,97 @@ def DATA(a,b):
     b=int(input("Daraja kiriting: "))
     return print(a**b) 
 
+def fibona(n):
+    a=[]
+    a1=int(input("Massivning 1-elementini kiriting: "))
+    a2=int(input("Massivning 2-elementini kiriting: "))
+    a.append(a1)
+    a.append(a2)
+    for i in range(n-2):
+        b=a[i]+a[i+1]
+        a.append(b)
+    print(a)
+    return a
+
+
+
+
+# dastur 34 uchun
+
+def name(ism,familya):
+    return f"{ism} {familya}".title()
+
+
+def aylana_yuzi(r,pi=3.14159):
+    return pi*r**2
+
+def aylana_perimetri(r,pi=3.14159):
+    return 2*pi*r
+
+#man duzganim
+def tub(n):
+    m=n//2+1
+    if n==2 or n==3:
+        return True
+    elif n<2:
+        return False
+    else:
+        for i in range(m):
+            if n%(i+2)==0:
+              
+                return False
+           
+        return True
+
+
+#saytdan olganim
+def tubSonmi(n):
+    if n==2 or n==3: 
+        return True
+    if n%2==0 or n<2: 
+        return False
+    for i in range(3, int(n**0.5)+1, 2):   # faqat toq sonlarni tekshiramiz
+        if n%i==0:
+            return False   
+    return True
+
+
+# dastur34  AMALIYOT
+def Max(a,b,c):
+    return max(a,b,c)
+
+
+def katta_harf(A):
+    for i in range(len(A)):
+        
+        A[i]=A[i].capitalize()
+    return A
+
+
+def juft_son(A):
+    B=[]
+    m=0
+    for i in range(len(A)):
+        i=i-m
+        if A[i]%2==0:
+            x=A.pop(i)
+            B.append(x)
+            m+=1
+           
+    return B
+
+def fibonada_bormi(a):
+    m=1
+    n=2
+    l=1
+    while l:
+        x=m+n
+        m=n
+        n=x
+       # print(x,end="  ")
+        if x==a or a==1 or a==2:
+            l=0
+            return True
+        elif x>a:
+            l=0
+            return False
